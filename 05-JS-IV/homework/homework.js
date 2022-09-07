@@ -50,19 +50,34 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  delete objeto[unapropiedad];
+
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+  var obj = {
+    nombre: nombre,
+    email: email,
+    password: password
+  };
 
+    return obj;
+    
 }
 
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  if(usuario['email']) {  
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -70,6 +85,12 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(objeto[propiedad]) {
+    return true;
+  } else {
+      return false;
+}
+  // return objeto.hasOwnProperty(propiedad);
 }
 
 function verificarPassword (usuario, password) {
@@ -77,19 +98,28 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  return usuario['password'] === password;
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
   // "usuario" tiene una propiedad llamada "amigos" que es un array
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
-  // Tu código:
+  // // Tu código:
+  var user = {
+   amigos: ['jose', 'Camilo']
+   }
+  usuario.amigos.push(nuevoAmigo);
+
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -97,7 +127,7 @@ function pasarUsuarioAPremium (usuarios) {
   // Cada objeto "usuario" tiene la propiedad "esPremium"
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
-  // Tu código:
+  // Tu código:  
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -106,7 +136,7 @@ function sumarLikesDeUsuario (usuario) {
   // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
-  // Tu código:
+  // Tu código: 
 }
 
 function agregarMetodoCalculoDescuento (producto) {
