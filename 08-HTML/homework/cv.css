@@ -1,0 +1,11 @@
+body {
+    display: block;
+    
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.divhead img {
+    height: 180px;
+    width: 180px;
+}
