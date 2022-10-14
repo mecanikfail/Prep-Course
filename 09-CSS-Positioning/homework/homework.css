@@ -36,14 +36,75 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
+#ejercicioCuatro {
+    position: fixed;
+    top: 1px;        
+}
 
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
+#ejercicioCinco {
+    display: flexbox;        
+    text-align: center; 
+    align-items: center;  
+    justify-items: center;
+               
+
+}
+
+#ejercicioCinco span {
+   margin-left: 90px;
+   margin-right: 90px;
+   display: inline-block;
+   align-items: center;
+   justify-items: center;
+   
+
+}
+
+
 
 
 
 /* Ejercicio 6. */
+
+#ejercicioCinco span {    
+    margin-left: -700px;
+    margin-right: -750px;
+}
+
+#ejercicioCinco img {
+    margin-left: 190px;
+    right: 1300px;  
+}
+
+/* Ejercicio 7. */
+
+#elementoUno {
+    
+    align-self:flex-end
+}
+#elementoDos {
+    
+    justify-content: first baseline;
+    
+}
+#elementoTres {
+    
+    align-items: center;
+    
+    margin-top: 200px;
+   
+
+}
+#elementoCuatro {
+    
+    flex-direction: row;
+    
+   
+
+}
+
